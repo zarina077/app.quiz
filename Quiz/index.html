@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home-box custom-box ">
+        <h3>inctraduction</h3>
+        <p>Question numbers: <span class="total-question"></span></p>
+        <button type="button" class="btn" onclick="startQuiz()">Quiz start</button>
+    </div>
+
+    <div class="quiz-box custom-box hide">
+        <div class="question-number">       </div>
+        <div class="question-text">     </div>
+        <div class="option-container">
+           
+        </div>
+        <div class="next-question-btn">
+            <button type="button" class="btn" onclick="next()">next</button>
+        </div>
+        <div class="answers-indicator">
+        </div>
+    </div>
+    <div class="result-box custom-box hide">
+        <h1>result</h1>
+        <table> 
+            <tr>
+                <td>Questions:</td>
+                <td><span class="total-question"></span></td>
+            </tr>
+            <tr>
+                <td>ettampt</td>
+                <td><span class="total-ettempt"></span></td>
+            </tr>
+            <tr>
+                <td>correct</td>
+                <td><span class="total-correct"></span></td>
+            </tr>
+            <tr>
+                <td>wrong</td>
+                <td><span class="total-wrong"></span></td>
+            </tr>
+
+            <tr>
+                <td>persectage</td>
+                <td><span class="percentage"></span></td>
+            </tr>
+
+            <tr>
+                <td>score</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+        </table>
+        <button type="button"class="btn" onclick="tryAgainQuiz()">Try again</button>
+        <button type="button"class="btn" onclick="goToHome()">go Home</button>
+
+    </div>
+
+</body>
+<script src="app.js"></script>
+<script src="array.js"></script>
+
+</html>
